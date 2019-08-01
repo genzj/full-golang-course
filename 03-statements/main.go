@@ -10,7 +10,8 @@ func init() {
 }
 
 func main() {
-	useIfStmt()
-	useSwitch()
-	useFor()
+	// useIfStmt()
+	// useSwitch()
+	// useFor()
+	fab(14)
 }

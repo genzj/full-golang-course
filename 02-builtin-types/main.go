@@ -7,4 +7,5 @@ func main() {
 	compareUnicode()
 	printInterface()
 	typeAssertion()
+	rot13()
 }

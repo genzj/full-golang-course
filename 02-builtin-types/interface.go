@@ -22,6 +22,7 @@ func typeAssertion() {
 	x["key-1"] = 12345
 	x["key-2"] = "abcde"
 	x["key-3"] = 3.1415927
+	x["key-4"] = 'z'
 
 	// var i int = int(x["key-1"])
 	key := "key-2"
@@ -47,8 +48,9 @@ func typeAssertion() {
 			fmt.Printf("%d is an integer\n", i)
 		case string:
 			fmt.Printf("%s is a string\n", i)
+		// TODO finish the float type
 		default:
-			fmt.Printf("%#v is of unexpected type", i)
+			fmt.Printf("%#v is of unexpected type\n", i)
 		}
 	}
 

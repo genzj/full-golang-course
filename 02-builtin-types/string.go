@@ -21,3 +21,21 @@ func printStrings() {
 	// 字符串不可取偏移指针
 	// fmt.Printf("string pointer: %v, %v\n", &str1[0], &str1[3])
 }
+
+func rot13() {
+	s := "tb cebtenzzvat ynathntr"
+	s = s
+
+	fmt.Print("decrypted text:")
+	// TODO 完成下列过程
+	// 	遍历s中每个字符c {
+	//  	如果c是字母a~m（不用考虑大小写） {
+	//			c = c + 13
+	//		} 如果c是字母n~z {
+	//			c = c - 13
+	//		}
+	//		打印c
+	//	}
+
+	fmt.Println("")
+}
