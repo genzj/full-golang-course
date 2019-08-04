@@ -14,6 +14,16 @@ func f3() int {
 }
 
 func f2() int {
+	// 类型断言panic
+	// var x interface{}
+	// return x.(int)
+	// 空指针panic
+	// var y *int
+	// return *y
+	// channel多次关闭panic
+	// z := make(chan uint, 1)
+	// close(z)
+	// close(z)
 	return f3() + 1
 }
 
