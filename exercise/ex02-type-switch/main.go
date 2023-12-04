@@ -6,6 +6,8 @@ func addOne(x interface{}) {
 	//   int / float32: algebraic addition
 	//   rune: next char in the alphabetic table, (a+1=b, b+1=c, ..., z+1=a)
 	//   others: print error message
+	default:
+		i = i
 	}
 }
 

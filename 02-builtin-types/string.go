@@ -24,7 +24,7 @@ func printStrings() {
 
 func rot13() {
 	s := "tb cebtenzzvat ynathntr"
-	s = s
+	fmt.Println(s)
 
 	fmt.Print("decrypted text:")
 	// TODO 完成下列过程

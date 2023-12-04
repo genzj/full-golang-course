@@ -7,4 +7,5 @@ use (
 	./01-basic/util
 	./02-builtin-types
 	./exercise/ex01-variables-consts
+	./exercise/ex02-type-switch
 )

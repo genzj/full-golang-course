@@ -4,6 +4,7 @@ import "fmt"
 
 func rot13Answer() {
 	s := "tb cebtenzzvat ynathntr"
+	fmt.Println(s)
 
 	fmt.Print("decrypted text:")
 	for _, c := range s {
