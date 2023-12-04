@@ -3,4 +3,6 @@ go 1.21.4
 use (
 	./00-hello
 	./01-basic
+	./01-basic/lib
+	./01-basic/util
 )
