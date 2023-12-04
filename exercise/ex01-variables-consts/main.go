@@ -2,8 +2,15 @@ package main
 
 import "fmt"
 
-// TODO: define two global const containing '32' and '1.8' respectively.
-// replace the usages of immediate numbers below with const you just defined
+// 任务：
+// 1. 定义两个常量存放转换用的常数
+//    multiple = 1.8
+//    offset = 32
+// 2. 用上面定义的常数替代转换程序中的立即数
+
+// 思考：
+// 1. multiple和offset分别是什么数据类型？
+// 2. 如何指定offset为float32型？
 
 func toCelsius(fahrenheit float32) float32 {
 	return (fahrenheit - 32) / 1.8

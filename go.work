@@ -5,4 +5,6 @@ use (
 	./01-basic
 	./01-basic/lib
 	./01-basic/util
+	./02-builtin-types
+	./exercise/ex01-variables-consts
 )
