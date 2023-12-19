@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
-	"time"
 )
 
 func addOne(i int, out chan<- int) {
@@ -43,9 +41,6 @@ func useOrderedCoroutine() {
 	}
 }
 
-func init() {
-	rand.Seed(time.Now().UnixNano())
-}
 func main() {
 	// useCoroutine()
 	// useChannelForLock()

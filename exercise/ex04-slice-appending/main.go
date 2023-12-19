@@ -11,6 +11,7 @@ func main() {
 	celsiusValues := make([]float32, 0, len(fahrenheitValues))
 
 	for _, f := range fahrenheitValues {
+		fmt.Println(f, "F => ", toCelsius(f), "C")
 		// TODO append the return value of toCelsius(f)
 		// to celsiusValues correctly
 	}

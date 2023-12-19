@@ -6,6 +6,13 @@ use (
 	./01-basic/lib
 	./01-basic/util
 	./02-builtin-types
+	./03-statements
+	./04-function
+	./05-defer
+	./06-array-slice
+	./24-helloecho
 	./exercise/ex01-variables-consts
 	./exercise/ex02-type-switch
+	./exercise/ex03-range
+	./exercise/ex04-slice-appending
 )

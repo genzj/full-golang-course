@@ -2,12 +2,17 @@ package main
 
 import (
 	"fmt"
-	"reflect"
 	"unsafe"
 )
 
+type SliceHeader struct {
+	Data uintptr
+	Len  int
+	Cap  int
+}
+
 func digSlice(s []uint8) {
-	sh := (*reflect.SliceHeader)(unsafe.Pointer(&s))
+	sh := (*SliceHeader)(unsafe.Pointer(&s))
 	fmt.Printf("slice Data:%x, Len:%d, Cap:%d\n", sh.Data, sh.Len, sh.Cap)
 }
 
@@ -42,10 +47,10 @@ func createSlice() {
 }
 
 func useSlice() {
-	s := make([]uint8, 10, 10)
+	s := make([]uint8, 10, 11)
 	digSlice(s)
-	// digSlice(s[3:5])
-	// digSlice(append(s[3:10], []uint8{100, 101, 102}...))
+	digSlice(s[3:5])
+	digSlice(append(s[3:10], []uint8{100, 101, 102}...))
 	fmt.Println(s)
 	createSlice()
 }
