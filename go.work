@@ -1,4 +1,4 @@
-go 1.21.4
+go 1.21.5
 
 use (
 	./00-hello
@@ -13,6 +13,10 @@ use (
 	./07-map
 	./08-coroutine-basic
 	./09-concurrent-mode
+	./20-file-copy
+	./21-json
+	./22-cgo
+	./23-import-side-effect
 	./24-helloecho
 	./exercise/ex01-variables-consts
 	./exercise/ex02-type-switch

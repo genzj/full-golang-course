@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	. "./img"
+	. "github.com/genzj/full-golang-course/23-import-side-effect/img"
 )
 
 func main() {
