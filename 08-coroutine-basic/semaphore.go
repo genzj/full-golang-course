@@ -6,10 +6,10 @@ import (
 	"time"
 )
 
-func longRunningTask(ch chan uint8, id int, done *sync.WaitGroup) {
-	ch <- 0
+func longRunningTask(limit chan uint8, id int, done *sync.WaitGroup) {
+	limit <- 0
 	defer func() {
-		<-ch
+		<-limit
 		done.Done()
 	}()
 
@@ -22,10 +22,10 @@ const maxTaskNumber = 3
 
 func useChannelForTaskPool() {
 	done := &sync.WaitGroup{}
-	ch := make(chan uint8, maxTaskNumber)
+	limit := make(chan uint8, maxTaskNumber)
 	for i := 0; i < 10; i++ {
 		done.Add(1)
-		go longRunningTask(ch, i, done)
+		go longRunningTask(limit, i, done)
 	}
 
 	done.Wait()

@@ -10,8 +10,8 @@ func addOne(i int, out chan<- int) {
 
 func useCoroutine() {
 	ch := make(chan int)
-	for i := 10; i < 15; i++ {
-		go addOne(i, ch)
+	for number := 10; number < 15; number++ {
+		go addOne(number, ch)
 	}
 
 	for i := 0; i < 5; i++ {
@@ -26,9 +26,11 @@ func addOneWithIndex(idx, i int, out chan<- [2]int) {
 func useOrderedCoroutine() {
 	ch := make(chan [2]int)
 	answer := [5]int{}
+	index := 0
 
-	for i := 0; i < 5; i++ {
-		go addOneWithIndex(i, i+10, ch)
+	for number := 10; number < 15; number++ {
+		go addOneWithIndex(index, number, ch)
+		index += 1
 	}
 
 	for i := 0; i < 5; i++ {
@@ -42,7 +44,8 @@ func useOrderedCoroutine() {
 }
 
 func main() {
-	// useCoroutine()
+	useCoroutine()
+	// useOrderedCoroutine()
 	// useChannelForLock()
-	useChannelForTaskPool()
+	// useChannelForTaskPool()
 }

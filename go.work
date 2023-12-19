@@ -10,6 +10,8 @@ use (
 	./04-function
 	./05-defer
 	./06-array-slice
+	./07-map
+	./08-coroutine-basic
 	./24-helloecho
 	./exercise/ex01-variables-consts
 	./exercise/ex02-type-switch
