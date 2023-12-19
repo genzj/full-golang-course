@@ -13,8 +13,8 @@ func fetchResourceWithCancel(out chan<- uint, cancel <-chan uint, server uint) {
 	case <-cancel:
 		fmt.Printf("fetching from server %d has been cancelled\n", server)
 	default:
-		fmt.Printf("resource received from server %d\n", server)
 		out <- 1
+		fmt.Printf("resource received from server %d\n", server)
 	}
 }
 
