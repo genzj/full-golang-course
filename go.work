@@ -21,6 +21,7 @@ use (
 	./25-interface
 	./26-embedding
 	./27-value-vs-pointer
+	./90-go-generate
 	./exercise/ex01-variables-consts
 	./exercise/ex02-type-switch
 	./exercise/ex03-range
