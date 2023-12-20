@@ -12,7 +12,7 @@ import (
 type normalRandomizer int
 
 func (normalRandomizer) seed(seed int64) {
-	rand.Seed(seed)
+	// rand.Seed(seed)
 }
 
 func (normalRandomizer) pick(seq []interface{}) interface{} {

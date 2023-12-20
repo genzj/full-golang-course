@@ -18,6 +18,9 @@ use (
 	./22-cgo
 	./23-import-side-effect
 	./24-helloecho
+	./25-interface
+	./26-embedding
+	./27-value-vs-pointer
 	./exercise/ex01-variables-consts
 	./exercise/ex02-type-switch
 	./exercise/ex03-range

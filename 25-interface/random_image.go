@@ -33,9 +33,9 @@ func (r randomImage) Bounds() image.Rectangle {
 // At(Bounds().Max.X-1, Bounds().Max.Y-1) returns the lower-right one.
 func (r randomImage) At(x int, y int) color.Color {
 	return color.RGBA{
-		R: uint8(rand.Uint32() & (uint32(x) ^ uint32(y))),
-		G: uint8(rand.Uint32() & (uint32(x) ^ uint32(y))),
-		B: uint8(rand.Uint32() & (uint32(x) ^ uint32(y))),
+		R: uint8(rand.Uint32()),
+		G: uint8(rand.Uint32()),
+		B: uint8(rand.Uint32()),
 		A: 255,
 	}
 }
